@@ -1,0 +1,15 @@
+@import "./flex.scss";
+@import "./components.scss";
+@import "./variables.scss";
+@import "./spacing.scss";
+@import "./typography.scss";
+@import "./custom.scss";
+
+body {
+  margin: 0;
+  background-color: #f5f5fa;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,77 @@
+@import "./variables.scss";
+
+// ----------------------------- Button --------------------------------------- //
+.btn {
+    border: 0;
+    cursor: pointer;
+    background: map-get($colors, "secondary");
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25),
+        10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #fff;
+    border-radius: 32px;
+}
+.btn:active {
+    background-color: map-get($colors, "tertiary");
+    box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.5), -5px -5px 10px #fff;
+}
+.btn-text {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+// ----------------------------- Input --------------------------------------- //
+.input {
+    border: 0;
+    padding-left: 20px;
+    background: #f5f5fa;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25),
+        inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #ffffff;
+    border-radius: 40px;
+}
+.input:focus {
+    outline: none;
+}
+.input-error {
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgb(250, 3, 3),
+        inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #ffffff;
+}
+
+input[type="file"] {
+    display: none;
+}
+.image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+
+// ----------------------------- Text --------------------------------------- //
+.text {
+    padding: 0;
+    margin: 0;
+}
+
+// ----------------------------- Loader --------------------------------------- //
+.loader {
+    border: 10px solid map-get($colors, "tertiary");
+    border-radius: 50%;
+    border-top: 10px solid map-get($colors, "primary");
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

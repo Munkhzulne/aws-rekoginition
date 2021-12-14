@@ -1,0 +1,64 @@
+@for $i from 1 through 100 {
+    .h-#{$i}-vh {
+        height: $i + vh;
+    }
+    .w-#{$i}-vw {
+        width: $i + vw;
+    }
+    .h-#{$i}-vw {
+        height: $i + vw;
+    }
+    .w-#{$i}-vh {
+        width: $i + vh;
+    }
+}
+
+@for $i from 0 through 100 {
+    .pa-#{$i} {
+        padding: $i + px;
+    }
+    .ph-#{$i} {
+        padding-left: $i + px;
+        padding-right: $i + px;
+    }
+    .pl-#{$i} {
+        padding-left: $i + px;
+    }
+    .pt-#{$i} {
+        padding-top: $i + px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i + px;
+    }
+    .pv-#{$i} {
+        padding-top: $i + px;
+        padding-bottom: $i + px;
+    }
+    .ma-#{$i} {
+        margin: $i + px;
+    }
+    .mt-#{$i} {
+        margin-top: $i + px;
+    }
+    .ml-#{$i} {
+        margin-left: $i + px;
+    }
+    .mr-#{$i} {
+        margin-right: $i + px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i + px;
+    }
+    .top-#{$i} {
+        top: $i + px;
+    }
+    .bottom-#{$i} {
+        bottom: $i + px;
+    }
+    .left-#{$i} {
+        left: $i + px;
+    }
+    .right-#{$i} {
+        right: $i + px;
+    }
+}

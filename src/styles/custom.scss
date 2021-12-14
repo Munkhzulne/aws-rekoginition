@@ -1,0 +1,17 @@
+.pointer {
+    cursor: pointer;
+}
+
+@for $i from 1 through 10 {
+    .z-#{$i} {
+        z-index: $i;
+    }
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}

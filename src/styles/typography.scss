@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+@each $name, $color in $colors {
+    .color-#{$name} {
+        color: $color;
+    }
+}
+
+@for $i from 10 through 100 {
+    .fs-#{$i} {
+        font-size: $i + px;
+    }
+    .lh-#{$i} {
+        line-height: $i + px;
+    }
+    .ls-#{$i} {
+        letter-spacing: $i + px;
+    }
+}
+
+@for $i from 4 through 9 {
+    .weight-#{$i*100} {
+        font-weight: $i * 100;
+    }
+}
